@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom/client';
 import { render } from 'react-dom';
 
 import { useForm, Controller } from 'react-hook-form';
@@ -31,7 +32,5 @@ function Test({ testname, callback }) {
 
 export default Test;
 
-const container = document.getElementById('test')
-render(<Test name='Testing' />, container, () => {
-  console.log('test completed.');
-});
+const container = ReactDOM.createRoot(document.getElementById('test'));
+container.render(<Test name='Testing' />);

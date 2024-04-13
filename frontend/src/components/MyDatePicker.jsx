@@ -3,7 +3,7 @@ import { addDays, subDays } from 'date-fns';
 import { Controller } from 'react-hook-form';
 
 import DatePicker from 'react-datepicker';
-import styles from './react-datepicker.css';
+import './react-datepicker.css';
 
 function MyRangeDatepicker ({ control }) {
   // Default startDate to yesterday.
